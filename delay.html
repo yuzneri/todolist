@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>遅れて表示されるコンテンツ</title>
+</head>
+<body>
+<p>5秒後にコンテンツが表示されます</p>
+<div id="app"></div>
+
+<script>
+    setTimeout(function() {
+        document.getElementById('app').innerHTML = '<span id="delay">遅れて表示されるコンテンツ</span>';
+    }, 5000);
+</script>
+</body>
+</html>
