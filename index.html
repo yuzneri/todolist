@@ -13,7 +13,7 @@
     <ol id="todos">
         <li v-for="(todo, index) in todos" :key="index" v-bind:id="'todo-' + (index + 1)">
             <span class="todo-text">{{ todo }}</span>
-            <button v-bind:id="'del-' + (index + 1)" @click="removeTodo(index)">削除</button>
+            <button class="del" @click="removeTodo(index)">削除</button>
         </li>
     </ol>
 </div>
