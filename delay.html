@@ -26,14 +26,13 @@
     </style>
 </head>
 <body>
-<p>5秒後下にコンテンツが表示されます</p>
 <div id="app">
     <div class="loader"></div>
 </div>
 
 <script>
     setTimeout(function () {
-        document.getElementById('app').innerHTML = '<span id="delay">遅れて表示されるコンテンツ</span>';
+        document.getElementById('app').innerHTML = '<span id="delay">このコンテンツは遅れて表示されます</span>';
     }, 5000);
 </script>
 </body>
